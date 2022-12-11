@@ -1,24 +1,14 @@
 <template>
-  <v-app class="bg">
+  <v-app>
     <v-main>
-      <v-app-bar>
-        <template v-slot:title>
-          <a href="/" class="brand">superK's Blog</a>
+      <v-toolbar border color="white">
+        <template v-slot:prepend>
+          <a href="/">
+          <v-img width="220" src="/public/logo2.png"></v-img>
+        </a>
         </template>
-      </v-app-bar>
+      </v-toolbar>
       <router-view></router-view>
     </v-main>
   </v-app>
 </template>
-
-<script setup>
-</script>
-
-<style scoped>
-.bg {
-  background-color: #e8e8e8;
-}
-.brand {
-  text-decoration: none;
-}
-</style>
