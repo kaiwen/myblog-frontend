@@ -4,7 +4,7 @@
       <v-col cols="10">
         <v-row justify="center">
           <v-col cols="10" style="padding-top:40px">
-            <v-card v-for="a in articls" :to="getPostId(a.id)">
+            <v-card v-for="a in articls" :to="getPostId(a.id)" elevation="0">
               <div class="d-flex justify-space-between">
                 <div>
                   <v-card-title>{{ a.title }}</v-card-title>
