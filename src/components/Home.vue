@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="10">
+    <v-row class="flex-column-reverse flex-md-row">
+      <v-col xs="12" md="10">
         <v-row justify="center">
           <v-col cols="10" style="padding-top:40px">
             <v-card v-for="a in articls" :to="getPostId(a.id)" elevation="0">
@@ -13,15 +13,16 @@
                     <p class="content">{{ a.text }}</p>
                   </v-card-text>
                 </div>
-                <v-avatar size="128" rounded="0" class="ma-4">
+                <v-avatar size="128" rounded="0" class="ma-4 d-none d-sm-flex">
                   <v-img :src="a.img" cover></v-img>
                 </v-avatar>
               </div>
             </v-card>
+            <v-divider></v-divider>
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="2">
+      <v-col xs="12" md="2">
         <div class="d-flex justify-center profile-box">
           <v-card variant="flat" class="text-center">
             <v-avatar image="2.jpg" size="100"></v-avatar>

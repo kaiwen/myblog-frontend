@@ -1,11 +1,11 @@
 <template>
     <v-container>
         <v-row class="justify-center">
-            <v-col cols="6" xl="4">
+            <v-col cols="12" md="6" xl="4">
                 <div class="text-grey">{{new Date(articl.timestamp * 1000).toDateString()}}</div>
                 <div class="text-h3 font-weight-medium">{{ articl.title }}</div>
             </v-col>
-            <v-col cols="6" xl="4">
+            <v-col cols="12" md="6" xl="4">
                 <v-img :src="articl.img" class="rounded-lg elevation-1"></v-img>
             </v-col>
         </v-row>
